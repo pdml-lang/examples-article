@@ -1,7 +1,7 @@
-[ch [title Fundamental Examples]
+[ch (id=fundamental_examples) [title Fundamental Examples]
 
 
-    [ch [title Hello]
+    [ch (id=hello) [title Hello]
     
         [code
             [hello]
@@ -13,7 +13,7 @@
     ]
 
 
-    [ch [title Text node]
+    [ch (id=text_node) [title Text node]
 
         [code
             [teachers Bob]
@@ -32,11 +32,17 @@
             [info He said:
                 "She said: 'All is well!'" 😃]
         code]
+
+        In the above example node [c info] contains the text:
+        [code
+            He said:
+                "She said: 'All is well!'" 😃
+        code]
     ]
 
 
 
-    [ch [title Node with one child node]
+    [ch (id=child_node) [title Node with one child node]
 
         [code
             [config [color orange]]
@@ -45,21 +51,30 @@
     ]
 
 
-    [ch [title Tree]
+    [ch (id=tree) [title Tree]
+
+        [code
+            [config[color orange][size[width 1618][height 1000]]]
+        code]
+        
+        Node [c config] has two child nodes: [c color] and [c size]. Node [c size] has two child nodes too: [c width] and [c height].
+
+        Readability and writeabilty are considerably improved when indents are used to visualize the structure:
+
         [code
             [config
                 [color orange]
                 [size
-                    [width 162]
-                    [height 100]
+                    [width 1618]
+                    [height 1000]
                 ]
             ]
         code]
-        Node [c config] has two child nodes: [c color] and [c size]. Node [c size] has two child nodes too: [c width] and [c height].
+        Now the AST has additional text nodes containing whitespace, but whitespace nodes like this are typically ignored by applications reading config data.
     ]
 
 
-    [ch [title Markup code]
+    [ch (id=simple_markup_code) [title Markup code]
 
         Suppose we want to render the following text in a browser:
 
@@ -76,7 +91,7 @@
         code]
     ]
 
-    [ch [title Escape characters in text]
+    [ch (id=escape_chars) [title Escape characters in text]
     
         If node [c p] contains the text:
         

@@ -1,6 +1,6 @@
-[ch [title Real World Examples]
+[ch (id=real_world_examples) [title Real World Examples]
 
-    [ch [title Config File]
+    [ch (id=config_file) [title Config File]
 
         Consider the following JSON config file used to define a database connection:
         [caption File config.json]
@@ -37,7 +37,7 @@
         code]
     ]
 
-    [ch [title Table Data]
+    [ch (id=table_data) [title Table Data]
 
         Say we have the following XML document to store a list of books:
         [code
@@ -83,9 +83,9 @@
         code]
     ]
 
-    [ch [title Database]
+    [ch (id=database) [title Database]
 
-        Sometimes it makes sense to use text files (instead of a powerful database engine) to store simple, small databases. Each table could be stored in a separate file, or a single file could be used to store all data. Text files are also useful to export data.
+        Sometimes it makes sense to use text files (instead of a powerful database engine) to store simple, small databases. Each table could be stored in a separate file, or a single file could be used to store all tables. Text files are also useful to export data.
         
         The following code illustrates a small database stored in PDML format:
 
@@ -110,33 +110,33 @@
         code]
     ]
 
-    [ch [title Markup Code]
+    [ch (id=markup_code) [title Markup Code]
 
-        [link url=https://www.pml-lang.dev/ text=PML] is a markup language that uses the PDML format.
+        [link url=https://www.pml-lang.dev/ text=PML] is a markup language that uses PDML's basic syntax and extensions.
 
-        This document is written in PML. You can have a look at the TODO [- [link url=https://www.pml-lang.dev/ text=full PML source code] -] of this document.
+        This document is written in PML. You can have a look at its [link url=https://github.com/pdml-lang/examples-article text="PML markup code"].
 
-        Here is an excerpt that shows the PML code of this chapter:
+        Here is an excerpt showing the markup code for this chapter:
 
         [code
             ===
-            TODO
             [ch [title Markup Code]
 
-                [link url=https://www.pml-lang.dev/ text=PML] is a markup language that uses the PDML format.
+                [link url=https://www.pml-lang.dev/ text=PML] is a markup language that uses PDML's basic syntax and extensions.
 
-                This document is written is PML. You can have a look at the TODO [- [link url=https://www.pml-lang.dev/ text=full PML source code] -] of this document.
+                This document is written in PML. You can have a look at its [link url=https://github.com/pdml-lang/examples-article text="PML markup code"].
 
-                Here is an excerpt showing the PML code of this chapter:
+                Here is an excerpt showing the markup code for this chapter:
+
                 [code
                     ...
-                code]
+                ]
             ]
             ===
         ]
     ]
 
-    [ch [title AST]
+    [ch (id=ast) [title AST]
 
         Every PDML document is a tree of data. Hence all kinds of structured and unstructured data can be stored.
 
